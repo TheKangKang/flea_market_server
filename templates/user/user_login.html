@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user_login</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="studentid" name="studentid" placeholder="学号">
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="password" name="password" placeholder="密码">
+        </div>
+        <div class="col-4">
+            <input id="register" type="button" class="btn btn-success" value="登录">
+        </div>
+    </form>
+</body>
+</html>
